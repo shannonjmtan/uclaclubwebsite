@@ -1,14 +1,15 @@
-<?php
+<?php 
 
 session_start();
 
-$_SESSION["page"] = "contact";
+$_SESSION["page"] = "about";
 
 include "template.php";
 
 ?>
 
-<body> 
+<body>
+    
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span12">

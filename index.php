@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="assets/css/todc-bootstrap.css" rel="stylesheet" media="screen">
-  </head>
-  
-  <style type="text/css">
-      body {
-          padding-top: 60px;
-          padding-bottom: 40px;
-      }
-      
-      .sidebar-nav {
-          padding: 9px 0;
-      }
-      
-      .center {
-          text-align: center;
-      }
-      
-      .hero-unit {
-          background-color: #0073CF;
-          color: #FFB300;
-      }
-      
-      .hero-unit > p {
-          padding-top: 5px;
-          color: white;
-      }
-  </style>
+<?php
+    
+session_start();
+
+$_SESSION["page"] = "home";
+
+include "template.php";
+
+?>
   
   <body>
-      
-    <?php include 'navbar.php'; ?>
-
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
+        <div class="span2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
@@ -61,7 +33,7 @@
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-        <div class="span9">
+        <div class="span10">
           <div class="hero-unit">
             <h1>UCLA Engineering Student Organizations</h1>
             <p>In addition to a world class education, UCLA Engineering provides the opportunity to be involved with numerous student organizations to provide priceless experience to be competitive in industry.</p>
@@ -87,12 +59,9 @@
         </div><!--/span-->
       </div><!--/row-->
       <hr>
-
-      <footer class="center">
+ 
+    <footer class="center">
         <p>Club on!</p>
-      </footer>
+    </footer>
     </div>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
   </body>
-</html>
