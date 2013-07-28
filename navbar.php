@@ -7,9 +7,8 @@ if ($active_page == "home")
     $home = true;
 else if ($active_page == "about")
     $about = true;
-else if ($active_page == "contact")
-    $contact = true;
-
+else if ($active_page == "list")
+    $list = true;
 ?>
 
 <div class="navbar navbar-fixed-top">
@@ -25,7 +24,7 @@ else if ($active_page == "contact")
        <ul class="nav">
          <li <?php if($home) echo 'class="active"'; ?>><a href="index.php">Home</a></li>
          <li <?php if($about) echo 'class="active"'; ?>><a href="about.php">About</a></li>
-         <li <?php if($contact) echo 'class="active"'; ?>><a href="contact.php">Contact</a></li>
+         <li <?php if($list) echo 'class="active"'; ?>><a href="list.php">List of Groups</a></li>
        </ul>
      </div>
    </div>
